@@ -4,7 +4,7 @@
       <v-row align="center">
         <v-col cols="12" md="2">
           <nuxt-link to="/">
-            <h1>logo</h1>
+            <img src="@/static/logos/cs_logo.png" alt="" width="25%">
           </nuxt-link>
         </v-col>
         <v-col cols="12" md="10">

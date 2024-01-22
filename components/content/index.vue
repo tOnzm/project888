@@ -5,12 +5,12 @@
       height="200px"
     ></v-img>
 
-    <v-card-title> Top western road trips </v-card-title>
+    <v-card-title> {{ name }} ({{ username }})</v-card-title>
 
-    <v-card-subtitle> 1,000 miles of wonder </v-card-subtitle>
+    <v-card-subtitle> ตำแหน่ง <span>อาจารย์</span></v-card-subtitle>
 
     <v-card-actions>
-      <v-btn color="orange lighten-2" text> Explore </v-btn>
+      <v-btn color="orange lighten-2" text> ดูข้อมูล </v-btn>
 
       <v-spacer></v-spacer>
 
@@ -24,11 +24,9 @@
         <v-divider></v-divider>
 
         <v-card-text>
-          I'm a thing. But, like most politicians, he promised more than he
-          could deliver. You won't have time for sleeping, soldier, not with all
-          the bed making you'll be doing. Then we'll go with that data file!
-          Hey, you add a one and two zeros to that or we walk! You're going to
-          do his laundry? I've got to find a way to escape.
+          เบอร์โทรศัพท์ {{ phone }} <br />
+          อีเมล {{ email }} <br />
+          เว็บไซต์ {{ website }}
         </v-card-text>
       </div>
     </v-expand-transition>
@@ -38,6 +36,28 @@
 <script>
 export default {
   name: 'ContentComponent',
+  props: {
+    name: {
+      type: String,
+      default: 'ชื่อ',
+    },
+    phone: {
+      type: Number,
+      default: 0,
+    },
+    email: {
+      type: String,
+      default: 'อีเมล',
+    },
+    username: {
+      type: String,
+      default: 'username',
+    },
+    website: {
+      type: String,
+      default: 'website',
+    },
+  },
   data: () => ({
     show: false,
   }),

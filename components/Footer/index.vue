@@ -3,9 +3,7 @@
     <v-row align="center">
       <v-col cols="4" md="4" align="end">
         <ul>
-          <nuxt-link to="/">
-            <li>หน้าแรก</li>
-          </nuxt-link>
+          <h3>หน้าแรก</h3>
           <nuxt-link to="/teacher">
             <li>คณะอาจารย์</li>
           </nuxt-link>
@@ -19,9 +17,7 @@
       </v-col>
       <v-col cols="4" md="4" align="center">
         <ul>
-          <nuxt-link to="/">
-            <li>หน้าแรก</li>
-          </nuxt-link>
+          <h3>หน้าแรก</h3>
           <nuxt-link to="/teacher">
             <li>คณะอาจารย์</li>
           </nuxt-link>
@@ -34,9 +30,7 @@
         </ul> </v-col
       ><v-col cols="4" md="4" align="start">
         <ul>
-          <nuxt-link to="/">
-            <li>หน้าแรก</li>
-          </nuxt-link>
+          <h3>หน้าแรก</h3>
           <nuxt-link to="/teacher">
             <li>คณะอาจารย์</li>
           </nuxt-link>
@@ -49,10 +43,9 @@
         </ul>
       </v-col>
     </v-row>
-    <div align="center">
-      <h5>คำชี้แจงความเป็นส่วนตัว เงื่อนไขการใช้บริการ</h5>
-      <h5>© KFC Thailand. All rights reserved.</h5>
-    </div>
+    <v-row>
+      <v-col align="center"> สาขาวิทยาการคอมพิวเตอร์ </v-col>
+    </v-row>
   </div>
 </template>
 
