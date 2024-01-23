@@ -11,9 +11,10 @@
       :key="i"
     >
       <v-sheet
-        :color="colors[i]"
+        :color="img[i]"
         height="100%"
       >
+      <img :src=img[i] alt="" srcset="">
         <v-row
           class="fill-height"
           align="center"
@@ -34,9 +35,9 @@
         name:'CarouselComponent',
         data () {
       return {
-        colors: [
-          'indigo',
-          'warning',
+        img: [
+          'https://www.chula.ac.th/wp-content/uploads/2023/02/Banner-CUDSON-Web-App_TH-1-768x402.jpg',
+          'https://www.chula.ac.th/wp-content/uploads/2023/02/Banner-CUDSON-Web-App_TH-1-768x402.jpg',
           'pink darken-2',
           'red lighten-1',
           'deep-purple accent-4',
